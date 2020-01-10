@@ -1,0 +1,122 @@
+.content-area {
+    padding: 36px 24px;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    h4 {
+        font-size: 2em;
+        margin: 18px 0;
+    }
+    h5 {
+        font-size: 1.35em;
+        margin: 12px 0;
+    }
+    p {
+        font-size: 1.1em;
+        margin: 8px 0 18px 0;
+        line-height: 150%;
+    }
+    b {
+        font-size: 1.1em;
+        color: $primary-color-1;
+        line-height: 150%;
+    }
+    i {
+        font-size: 1.1em;
+        color: $primary-color-1;
+        line-height: 150%;
+    }
+    u {
+        font-size: 1.1em;
+        color: $primary-color-1;
+        line-height: 150%;
+    }
+    strike {
+        font-size: 1.1em;
+        color: $primary-color-1;
+        line-height: 150%;
+    }
+    a {
+        font-size: 1.1em;
+        color: $accent-color-blue;
+        border-bottom: solid $accent-color-blue 1px;
+        line-height: 150%;
+    }
+    a:hover {
+        color: $accent-color-blue-highlight;
+        border-bottom: solid $accent-color-blue-highlight 1px;
+    }
+    ul {
+        line-height: 190%;
+        margin: 0;
+    }
+    li {
+        font-size: 1.1em;
+        line-height: 150%;
+        color: $primary-color-1;
+        margin: 0;
+    }
+    ol {
+        line-height: 190%;
+        margin: 0;
+    }
+    blockquote {
+        font-size: 1.1em;
+        color: $primary-color-1;
+        margin: 0;
+        line-height: 150%;
+        margin-left: 20px;
+        padding-left: 14px;
+        border-left: solid $accent-color-blue 2px;
+        font-style: italic;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-area {
+        padding: 30px 18px 30px 18px;
+        h4 {
+            font-size: 1.75em;
+        }
+        h5 {
+            font-size: 1.25em;
+        }
+        p {
+            font-size: 1.05em;
+        }
+        b {
+            font-size: 1.05em;
+        }
+        i {
+            font-size: 1.05em;
+        }
+        u {
+            font-size: 1.05em;
+        }
+        strike {
+            font-size: 1.05em;
+        }
+        a {
+            font-size: 1.05em;
+        }
+        ul {
+            font-size: 1.05em;
+        }
+        li {
+            font-size: 1.05em;
+        }
+        ol {
+            font-size: 1.05em;
+        }
+        blockquote {
+            font-size: 1.05em;
+        }
+    }
+}

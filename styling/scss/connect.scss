@@ -1,0 +1,116 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+
+.page-desc {
+    .page-desc-content {
+        .basics-section-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 36px;
+            .part {
+                margin-right: 36px;
+                p {
+                    
+                }
+                a {
+                    color: $primary-color-1;
+                    transition: all 0.2s;
+                }
+                a:hover {
+                    color: $accent-color-blue;
+                }
+                .header {
+                    color: $accent-color-blue;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .page-desc {
+        .page-desc-content {
+            .basics-section-content {
+                display: block;
+                .part {
+                    margin-right: 0;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+}
+
+#contact-form {
+    margin-top: 56px;
+    max-width: 650px;
+    input {
+        display: block;
+        outline: none;
+    }
+    input[type=text], input[type=email], textarea {
+        border: solid $primary-color-1 1px;
+        font-size: 0.95em;
+        transition: all 0.2s;
+        color: $primary-color-1;
+        font-family: $font-stack;
+        padding: 12px;
+        margin-bottom: 24px;
+        width: calc(100% - 30px);
+    }
+    input[type=text], input[type=email] {
+
+    }
+    .title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.8em;
+        margin-bottom: 8px;
+    }
+    textarea {
+        outline: none;
+        resize: vertical;
+        height: 200px;
+    }
+    input[type=submit] {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        outline: none;
+        border: none;
+        color: $white-text;
+        background-color: $accent-color-blue;
+        font-size: 0.9em;
+        padding: 12px 24px;
+        cursor: pointer;
+        transition: all 0.2s;
+        box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        position: relative;
+        top: 0;
+        z-index: 5;
+    }
+    input[type=submit]:hover {
+        background-color: $accent-color-blue-highlight;
+        top: -2px;
+    }
+    input[type=text]:focus, input[type=email]:focus, textarea:focus {
+        border-color: $accent-color-blue;
+      }
+}
+
+    
+@media (max-width: 500px) {
+    input[type=submit] {
+        font-size: 0.85em;
+        padding: 12px 20px;
+    }
+    #contact-form {
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,147 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+@import 'components/sections';
+@import 'components/testimonials';
+
+.home-about {
+    .home-about-content {
+        h3 {
+            font-weight: normal;
+            margin-bottom: 0;
+            line-height: 135%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home-about {
+        .home-about-content {
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+.home-clients {
+    .home-clients-content {
+        .logo-grid-wrapper {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .home-clients {
+        .home-clients-content {
+            .logo-grid-wrapper {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.impact-stats {
+    text-align: center;
+    background-color: $primary-color-1;
+    .impact-stats-content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .holder {
+            width: 49.5%;
+            .small {
+                color: $white-text;
+                font-size: 1.05em;
+            }
+            .big {
+                color: $white-text;
+                font-size: 6em;
+            }
+        }
+        .center {
+            width: 1%;
+            .bar {
+                margin-left: auto;
+                margin-right: auto;
+                width: 1px;
+                height: 100%;
+                background-color: rgba($color: $white-text, $alpha: 0.35);
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .impact-stats {
+        .impact-stats-content {
+            .holder {
+                .small {
+                    font-size: 1em;
+                }
+                .big {
+                    font-size: 4.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .impact-stats {
+        .impact-stats-content {
+            .holder {
+                .small {
+                    font-size: 1em;
+                }
+                .big {
+                    font-size: 3.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .impact-stats {
+        .impact-stats-content {
+            .holder {
+                .small {
+                    font-size: 0.95em;
+                }
+                .big {
+                    font-size: 2.8em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .impact-stats {
+        .impact-stats-content {
+            display: block;
+            .holder {
+                width: 100%;
+                .small {
+                    font-size: 1.05em;
+                }
+                .big {
+                    font-size: 4.5em;
+                }
+            }
+            .center {
+                width: 100%;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                .bar {
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgba($color: $white-text, $alpha: 0.25);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+@import 'components/body-small';
+
+
+.careers-nav {
+    background-color: $primary-color-6;
+    ul {
+        margin: 0;
+        text-align: center;
+        padding: 18px 18px;
+        li {
+            display: inline-block;
+            margin: 0 12px;
+            a {
+                color: $primary-color-1;
+            }
+            a:hover {
+                color: $accent-color-blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .careers-nav {
+        display: none;
+    }
+}
+
+
+.button-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start ;
+}

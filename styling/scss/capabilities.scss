@@ -1,0 +1,170 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+@import 'components/sections';
+
+.mobile-sidebar-wrapper {
+    background-color: $accent-color-blue;
+    display: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    position: static;
+    .mobile-sidebar {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        border: solid $white 1px;
+        padding: 4px;
+        padding-left: 10px;
+        overflow: hidden;
+        border-radius: 2px;
+        width: 90%;
+        #mobile-sidebar {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            cursor: pointer;
+            background-color: $accent-color-blue;
+            -webkit-appearance: none;
+            border: none;
+            font-size: 0.95em;
+            width: 100%;
+            color: $white-text;
+            border-radius: 0;
+            background-image: url('../../img/arrows.svg');
+            background-size: 13px;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    }
+}
+.fixed {
+    position: fixed;
+    top: 48px;
+    z-index: 138;
+}
+
+
+.capabilities-mega-wrapper {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+    padding: 64px 56px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+@media (max-width: 900px) {
+    .capabilities-mega-wrapper {
+        padding: 64px 18px 30px 18px;
+    }
+}
+
+.capabilities-nav-wrapper {
+    width: 380px;
+    .capabilities-nav {
+        padding: 18px;
+        padding-top: 0;
+        .capabilities-section {
+            margin-bottom: 12px;
+            .cap-header {
+                color: $primary-color-1;
+                font-weight: bold;
+                font-size: 1.1em;
+                margin-bottom: 4px;
+            }
+            p {
+                margin-bottom: 6px;
+            }
+            a {
+                margin-left: 15px;
+                display: block;
+                color: $primary-color-1;
+                opacity: 0.75;
+                transition: all 0.05s;
+            }
+            a:hover {
+                color: $accent-color-blue;
+                opacity: 1;
+                margin-left: 7px;
+            }
+            .focused {
+                opacity: 1;
+                color: $accent-color-blue;
+                margin-left: 7px;
+            }
+        }
+    }
+}
+
+.capabilities-content-wrapper {
+    max-width: 760px;
+    .capabilities-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        h1 {
+            margin-top: 32px;
+        }
+        .sub-bar {
+            height: 3px;
+        width: 100px;
+        background-color: $accent-color-blue;
+        margin-top: 6px;
+            margin-bottom: 32px;
+        }
+        .content-section {
+            .capability {
+                margin-bottom: 48px;
+                .capability-header {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-content: center;
+                    margin-bottom: 6px;
+                    img {
+                        width: auto;
+                        height: 28px;
+                        margin-right: 10px;
+                    }
+                    h4 {
+                        font-size: 1.25em;
+                    }
+                }
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .mobile-sidebar-wrapper {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .capabilities-mega-wrapper {
+        display: block;
+        padding-top: 32px;
+    }
+    .capabilities-nav-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .capabilities-content-wrapper {
+        .capabilities-content {
+            padding: 0;
+            h1 {
+                margin-top: 24px;
+            }
+        }
+    }
+}

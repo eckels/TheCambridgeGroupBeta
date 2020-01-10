@@ -1,0 +1,49 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+@import 'components/sections';
+
+.home-news {
+    text-align: left;
+    .home-news-content {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .news-grid-wrapper {
+            h1 {
+                text-align: left;
+            }
+            .bottom-bar {
+                height: 3px;
+                width: 100px;
+                background-color: $accent-color-blue;
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .home-news {
+        .home-news-content {
+            .news-grid-wrapper {
+                .news-grid-lower {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .home-news {
+        .home-news-content {
+            .news-grid-wrapper {
+                .link-arrow {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

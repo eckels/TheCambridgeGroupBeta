@@ -1,0 +1,280 @@
+/* Colors */
+$primary-color-1: #1C3552;
+$primary-color-2: #214D73;
+$primary-color-3: #60728A;
+$primary-color-4: #B4BBCA;
+$primary-color-5: #E1E4EA;
+$primary-color-6: #F0F1FA;
+
+$accent-color-blue: #28B1C4;
+$accent-color-blue-highlight: #46c7d9;
+$accent-color-orange: #EC5C3A;
+
+$white: #FFFFFF;
+$black: #000000;
+
+$primary-text: $primary-color-1;
+$accent-text: $accent-color-blue;
+$white-text: $white;
+$black-text: #2a2a2a;
+
+
+/* Fonts */
+@font-face {
+    font-family: century-gothic;
+    src: url(../../fonts/century-gothic-regular.ttf);
+}
+@font-face {
+    font-family: century-gothic;
+    src: url(../../fonts/century-gothic-bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: century-gothic;
+    src: url(../../fonts/century-gothic-italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: century-gothic;
+    src: url(../../fonts/century-gothic-italic-bold.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+$font-stack: century-gothic, sans-serif;
+
+/* Common Style Rules */
+$text-base-size: 0.9em;
+$text-opacity: 0.7;
+//$box-shadow-big: ;
+//$box-shadow-small: ;
+
+/* Global Stylings */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    background-color: $white;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color-1;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+p {
+    color: $primary-color-1;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95em;
+    line-height: 145%;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a:hover {
+    color: $accent-color-blue;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: $white-text;
+    background-color: $accent-color-blue;
+    font-size: 0.9em;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+button:hover {
+    background-color: $accent-color-blue-highlight;
+    top: -2px;
+}
+
+@media (max-width: 500px) {
+    button {
+        font-size: 0.85em;
+        padding: 12px 20px;
+    }
+}
+
+.link-arrow, .link-arrow-white {
+    transition: all 0.2s;
+    a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+}
+.link-arrow:after, .link-arrow-white:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../../img/right-arrow-accent.svg) no-repeat center right;
+    background-size: contain;
+    width: 24px;
+    height: 16px;
+    vertical-align: text-bottom;
+    left: 1px;
+    transition: all 0.2s;
+}
+
+.link-arrow:hover:after, .link-arrow-white:hover:after {
+    left: 8px;
+}
+
+.link-arrow:hover, .link-arrow-white:hover {
+    color: $accent-color-blue;
+    a {
+        color: $accent-color-blue;
+    }
+}
+
+.link-arrow {
+    color: $primary-color-1;
+    a {
+        color: $primary-color-1;
+        text-decoration: none;
+    }
+}
+
+.link-arrow-white {
+    color: $white-text;
+    a {
+        color: $white-text;
+        text-decoration: none;
+    }
+}
+
+.section {
+    width: 100%;
+    .section-content {
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 48px 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section {
+        .section-content {
+            padding: 30px 18px 30px 18px;
+        }
+    }
+}
+
+.section-header {
+    transition: all 0.2s;
+    margin-top: 78px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    .section-container {
+        background-color: rgba(0, 0, 0, 0.35);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        h1 {
+            color: $white-text;
+            font-size: 3.5em;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-header {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-header {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-header {
+        height: 35vh;
+        .section-container {
+            h1 {
+                font-size: 2.8em;
+            }
+        }
+    }
+}
+
+.empty-header {
+    transition: all 0.2s;
+    height: 78px;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .empty-header {
+        height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .empty-header {
+        height: 48px;
+    }
+}
+
+.page-desc {
+    .page-desc-content {
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        h3 {
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
