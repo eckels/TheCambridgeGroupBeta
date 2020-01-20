@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="glide/glide.core.min.css">
         <link rel="stylesheet" href="styling/css/about.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
         <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
@@ -206,9 +207,9 @@
 
         <div class="section page-desc page-desc-about">
             <div class="section-content page-desc-content page-desc-content-about">
-                <h3>Experts in helping clients profitably grow their businesses</h3>
+                <h2>Experts in helping clients profitably grow their businesses</h2>
                 <p>Since 1975, The Cambridge Group has helped clients develop and execute strategies that are driven by a superior understanding of profitable demand.  Headquartered in Chicago, The Cambridge Group’s strategy consultants apply Demand Strategy across global industries, enabling clients to align their infrastructure, businesses, and resources to meet marketplace demand in a way that is meaningfully differentiated from their competitors.<br><br>After 10 years as a division of Nielsen, the Partners of The Cambridge Group completed a management buyout in early 2019 to become an independent company again, providing a greater opportunity to invest in our capabilities to serve clients.  We remain a Connected Partner of Nielsen, providing superior access to Nielsen's data and measurement capabilities.</p>
-                <p class="link-arrow"><a href="about/our-team.html">Meet the team</a></p>
+                <a href="about/our-team.html" class="link-arrow-wrap"><p class="link-arrow">Meet the team</p></a>
             </div>
         </div>
 
@@ -218,7 +219,7 @@
                     <div class="award">
                         <img src="img/forbes.png" alt="America's best management consulting firms badge" class="logo" />
                         <div class="text">
-                            <h3>We are proud to be recognized as one of America's Best Management Consulting Firms by Forbes</h3>
+                            <h3>We are proud to be recognized as one of America's Best Management Consulting Firms in the following areas</h3>
                             <div class="categories">
                                 <div class="category">
                                     <img src="img/strategy.png" alt="" />
@@ -241,7 +242,7 @@
                                     <p>Data Analytics and Big Data</p>
                                 </div>
                             </div>
-                            <p class="link-arrow"><a href="posts/insights/post-item.html">Read about the award</a></p>
+                            <a href="posts/insights/post-item.html" class="link-arrow-wrap"><p class="link-arrow">Read about the award</p></a>
                         </div>
                     </div>
                 </div>
@@ -298,6 +299,22 @@
 
                 </div>
 
+            </div>
+        </div>
+
+        <div class="section nielsen-section">
+            <div class="section-content nielsen-section-content">
+                <div class="grid-wrapper">
+                    <div class="grid">
+                        <div class="right">
+                            <img src="img/cpn-gray.png" alt="Nielsen Connected Partner" />
+                        </div>
+                        <div class="left">
+                            <h2>Nielsen Connected Partner</h2>
+                            <p>After 10 years as Nielsen subsidiary, TCG's leadership team conducted a management buyout in 2019. We continue to maintain a close working relationship with Nielsen as a Nielsen Connected Partner. Our growth strategy frameworks, coupled with Nielsen data and analytics, provide a powerful combination for our clients.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -371,6 +388,40 @@
         <div class="section book-section">
             <div class="section-content book-section-content">
                 <h1>Our Books</h1>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/book.jpg" alt="" />
+                            <div class="desc-wrapper">
+                                <p class="title">Optimizing Growth</p>
+                                <p class="desc">Predictive and profitable strategies to understand demand and outsmart your competitors.</p>
+                                <a href="about/books.html"><button>Learn more</button></a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/book.jpg" alt="" />
+                            <div class="desc-wrapper">
+                                <p class="title">How Companies Win</p>
+                                <p class="desc">Predictive and profitable strategies to understand demand and outsmart your competitors.</p>
+                                <a href="about/books.html"><button>Learn more</button></a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/book.jpg" alt="" />
+                            <div class="desc-wrapper">
+                                <p class="title">Demand and Supply</p>
+                                <p class="desc">Predictive and profitable strategies to understand demand and outsmart your competitors.</p>
+                                <a href="about/books.html"><button>Learn more</button></a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="img/prev.svg" alt="Previous" /></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="img/next.svg" alt="Next" /></button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -412,7 +463,7 @@
                     </div>
                 </div>
                 <div class="bottom-footer">
-                    <p class="left"><a href="">Privacy Policy</a></p>
+                    <p class="left"><a href="privacy-policy.html">Privacy Policy</a></p>
                     <p class="right">&copy; <span id="date-target">2020</span> The Cambridge Group</p>
                 </div>
             </div>
@@ -421,5 +472,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/nav.js"></script>
+        <script src="glide/glide.min.js"></script>
+        <script src="glide/book-slider.js"></script>
     </body>
 </html>

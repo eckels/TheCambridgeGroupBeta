@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
 }
 .award-section {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba($primary-color-1, 0.9);
     padding-top: 18px;
     padding-bottom: 18px;
     .award-section-content {
@@ -33,7 +33,7 @@
         max-width: 1400px;
         .award {
             border-radius: 2px;
-            background-color: $primary-color-6;
+            background-color: $white;
             padding: 30px;
             display: flex;
             justify-content: flex-start;
@@ -54,13 +54,10 @@
                 }
                 .categories {
                     margin-top: 18px;
-                    padding-bottom: 24px;
+                    padding-bottom: 36px;
                     margin-bottom: 0;
                     width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
+                    display: block;
                     .category {
                         display: flex;
                         justify-content: flex-start;
@@ -96,11 +93,6 @@
                     height: 200px;
                     width: auto;
                 }
-                .text {
-                    .categories {
-                        padding-bottom: 42px;
-                    }
-                }
             }
         }
     }
@@ -117,6 +109,7 @@
                 text-align: center;
                 padding: 18px;
                 display: block;
+                background-color: $primary-color-6;
                 .logo {
                     height: auto;
                     width: 100%;
@@ -127,10 +120,6 @@
                 }
                 .text {
                     text-align: left;
-                    .categories {
-                        display: block;
-                        padding-bottom: 56px;
-                    }
                 }
             }
         }
@@ -225,6 +214,65 @@
     }
 }
 
+
+.nielsen-section {
+    background-color: $primary-color-6;
+    .nielsen-section-content {
+        .grid-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            .left {
+                width: 55%;
+                h2 {
+                    margin-bottom: 12px;
+                }
+                p {
+
+                }
+            }
+            .right {
+                width: 40%;
+                margin-left: 5%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .nielsen-section {
+        .nielsen-section-content {
+            .grid {
+                display: block;
+                .left {
+                    width: 100%;
+                    h2 {
+                        text-align: center;
+                    }
+                }
+                .right {
+                    width: 90%;
+                    max-width: 400px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 36px;
+                }
+            }
+        }
+    }
+}
+
+
+
 .book-section {
     text-align: center;
     background-color: $primary-color-2;
@@ -235,3 +283,152 @@
 
     }
 }
+
+.our-team {
+    h2 {
+        margin-bottom: 12px;
+    }
+    h3 {
+        font-weight: normal;
+    }
+}
+
+.our-team-header-text {
+    margin-top: 6px;
+    width: 100%;
+    margin-bottom: 36px !important;
+}
+
+.glide__arrow:focus {
+    outline: none; }
+  .glide__arrow:hover {
+    border-color: $white; }
+  .glide__arrow--left {
+    left: 0; }
+  .glide__arrow--right {
+    right: 0; }
+  .glide__arrow--disabled {
+    opacity: 0.33; }
+    .glide--swipeable {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab; }
+      
+      .glide--dragging {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing; }
+
+    .glide {
+        box-sizing: unset;
+        margin-top: 42px;
+    }
+    .glide__slides {
+        margin: 0;
+    }
+    .glide__slide {
+        img {
+            width: 35%;
+            height: auto;
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 3px;
+        }
+        .desc-wrapper {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            .title {
+                margin-top: 30px;
+                font-size: 1.45em;
+                color: $white-text;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .desc {
+                color: $white-text;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .glide__arrow {
+        position: absolute;
+        display: block;
+        top: 40%;
+        z-index: 1;
+        padding: 32px 6px;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        cursor: pointer;
+        transform: translateY(-50%);
+        transition: background-color 0.2s;
+        line-height: 1;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+    .glide__arrow:hover {
+        top: 40%;
+        background-color: transparent;
+        opacity: 1;
+      }
+    .glide__arrows {
+        img {
+            width: 32px;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .glide__arrow {
+            top: 35%;
+        }
+        .glide__arrow:hover {
+            top: 35%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .glide__arrow {
+            top: 30%;
+        }
+        .glide__arrow:hover {
+            top: 30%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .glide__arrow {
+            top: 26%;
+            padding: 24px 4px;
+        }
+        .glide__arrow:hover {
+            top: 26%;
+        }
+        .glide__slide {
+            img {
+                width: 40%;
+            }
+            .desc-wrapper {
+                .title {
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .glide__arrows {
+            img {
+                width: 28px;
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .glide__arrow {
+            top: 20%;
+        }
+        .glide__arrow:hover {
+            top: 20%;
+        }
+    }

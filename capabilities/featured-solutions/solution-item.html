@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="../../glide/glide.core.min.css">
         <link rel="stylesheet" href="../../styling/css/capabilities-item.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
         <link rel="apple-touch-icon" sizes="57x57" href="../../img/icon/apple-icon-57x57.png">
@@ -209,6 +210,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="carousel-wrapper">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="../../img/what-we-do.jpg" /></li>
+                    <li class="glide__slide"><img src="../../img/how-we-do-it.jpg" /></li>
+                    <li class="glide__slide"><img src="../../img/ideal-candidate.jpg" /></li>
+                    <li class="glide__slide"><img src="../../img/career-progression.jpg" /></li>
+                    <li class="glide__slide"><img src="../../img/careers.jpg" /></li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="../../img/prev.svg" alt="Previous" /></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="../../img/next.svg" alt="Next" /></button>
+                </div>
+            </div>
+              <div class="slide-index">
+                  <p id="slide-state"></p>
+              </div>
+        </div>
         
         <div class="section">
             <div class="section-content">
@@ -285,7 +307,7 @@
                     </div>
                 </div>
                 <div class="bottom-footer">
-                    <p class="left"><a href="">Privacy Policy</a></p>
+                    <p class="left"><a href="../privacy-policy.html">Privacy Policy</a></p>
                     <p class="right">&copy; <span id="date-target">2020</span> The Cambridge Group</p>
                 </div>
             </div>
@@ -294,5 +316,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="../../js/nav.js"></script>
+        <script src="../../glide/glide.min.js"></script>
+        <script src="../../glide/solution-slider.js"></script>
     </body>
 </html>

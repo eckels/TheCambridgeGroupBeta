@@ -202,13 +202,13 @@
 }
 
 .home-careers-wrapper {
-    background-image: url(../../img/bround7.jpg);
+    background-image: url(../../img/bround6.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .home-careers {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba($primary-color-2, 0.9);
     .home-careers-content {
         h1 {
             text-align: center;
@@ -350,11 +350,12 @@
                                 }
                             }
                         }
+                        .link-arrow-wrap {
+                            text-align: center;    
+                        }
                         .link-arrow-white {
-                            text-align: center;
-                            a {
-                                color: $primary-color-1;
-                            }
+                            display: block;
+                            color: $primary-color-1;
                         }
                     }
                     .right {

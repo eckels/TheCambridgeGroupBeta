@@ -1,0 +1,40 @@
+/* Global Stylings */
+@import 'components/base';
+
+/* Components */
+@import 'components/nav';
+@import 'components/body-small';
+
+.title-wrap {
+    background-color: $primary-color-6;
+    padding: 48px 30px;
+}
+.title {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width: 650px) {
+    .title-wrap {
+        padding: 36px 18px;
+    }
+    .title {
+        h1 {
+            font-size: 2em;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .title-wrap {
+        padding: 30px 18px;
+    }
+    .title {
+        h1 {
+            text-align: center;
+            font-size: 1.8em;
+        }
+    }
+}

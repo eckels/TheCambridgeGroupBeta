@@ -113,14 +113,16 @@ button:hover {
     padding: 12px 20px;
   }
 }
-.link-arrow, .link-arrow-white {
-  transition: all 0.2s;
-}
-.link-arrow a, .link-arrow-white a {
+.link-arrow-wrap {
   padding-top: 6px;
   padding-bottom: 6px;
   text-decoration: none;
   transition: all 0.2s;
+}
+
+.link-arrow, .link-arrow-white {
+  transition: all 0.2s;
+  display: inline-block;
 }
 
 .link-arrow:after, .link-arrow-white:after {
@@ -132,12 +134,12 @@ button:hover {
   width: 24px;
   height: 16px;
   vertical-align: text-bottom;
-  left: 1px;
+  left: 0px;
   transition: all 0.2s;
 }
 
 .link-arrow:hover:after, .link-arrow-white:hover:after {
-  left: 8px;
+  left: 7px;
 }
 
 .link-arrow:hover, .link-arrow-white:hover {
@@ -159,6 +161,51 @@ button:hover {
   color: #FFFFFF;
 }
 .link-arrow-white a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.left-link-arrow, .left-link-arrow-white {
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.left-link-arrow:before, .left-link-arrow-white:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url(../../img/left-arrow-accent.svg) no-repeat center left;
+  background-size: contain;
+  width: 24px;
+  height: 16px;
+  vertical-align: text-bottom;
+  right: 1px;
+  transition: all 0.2s;
+}
+
+.left-link-arrow:hover:before, .left-link-arrow-white:hover:before {
+  right: 8px;
+}
+
+.left-link-arrow:hover, .left-link-arrow-white:hover {
+  color: #28B1C4;
+}
+.left-link-arrow:hover a, .left-link-arrow-white:hover a {
+  color: #28B1C4;
+}
+
+.left-link-arrow {
+  color: #1C3552;
+}
+.left-link-arrow a {
+  color: #1C3552;
+  text-decoration: none;
+}
+
+.left-link-arrow-white {
+  color: #FFFFFF;
+}
+.left-link-arrow-white a {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -221,6 +268,7 @@ button:hover {
   transition: all 0.2s;
   height: 78px;
   width: 100%;
+  box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1000px) {
@@ -233,6 +281,11 @@ button:hover {
     height: 48px;
   }
 }
+@media (max-width: 600px) {
+  .empty-header {
+    box-shadow: none;
+  }
+}
 .page-desc .page-desc-content {
   max-width: 900px;
   margin-right: auto;
@@ -240,6 +293,9 @@ button:hover {
 }
 .page-desc .page-desc-content h3 {
   margin-bottom: 12px;
+}
+.page-desc .page-desc-content h2 {
+  margin-bottom: 18px;
 }
 .page-desc .page-desc-content p {
   margin-bottom: 0;
@@ -426,6 +482,7 @@ button:hover {
 .desktop-nav ul .link-dropdown .link-category .bar {
   background-color: #28B1C4;
   height: 2px;
+  border-radius: 1px;
   width: 40px;
   margin-top: 5px;
 }
@@ -1285,7 +1342,8 @@ button:hover {
   text-align: left;
 }
 .home-news .home-news-content .news-grid-wrapper .bottom-bar {
-  height: 3px;
+  height: 4px;
+  border-radius: 2px;
   width: 100px;
   background-color: #28B1C4;
   margin-top: 6px;
@@ -1297,7 +1355,8 @@ button:hover {
   }
 }
 @media (max-width: 550px) {
-  .home-news .home-news-content .news-grid-wrapper .link-arrow {
+  .home-news .home-news-content .news-grid-wrapper .link-arrow-wrap {
+    display: block;
     text-align: center;
   }
 }

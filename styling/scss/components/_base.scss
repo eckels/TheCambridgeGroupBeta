@@ -136,14 +136,16 @@ button:hover {
     }
 }
 
+.link-arrow-wrap {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
 .link-arrow, .link-arrow-white {
     transition: all 0.2s;
-    a {
-        padding-top: 6px;
-        padding-bottom: 6px;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
+    display: inline-block;
 }
 .link-arrow:after, .link-arrow-white:after {
     content: "";
@@ -154,12 +156,12 @@ button:hover {
     width: 24px;
     height: 16px;
     vertical-align: text-bottom;
-    left: 1px;
+    left: 0px;
     transition: all 0.2s;
 }
 
 .link-arrow:hover:after, .link-arrow-white:hover:after {
-    left: 8px;
+    left: 7px;
 }
 
 .link-arrow:hover, .link-arrow-white:hover {
@@ -178,6 +180,50 @@ button:hover {
 }
 
 .link-arrow-white {
+    color: $white-text;
+    a {
+        color: $white-text;
+        text-decoration: none;
+    }
+}
+
+.left-link-arrow, .left-link-arrow-white {
+    transition: all 0.2s;
+    display: inline-block;
+}
+.left-link-arrow:before, .left-link-arrow-white:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../../img/left-arrow-accent.svg) no-repeat center left;
+    background-size: contain;
+    width: 24px;
+    height: 16px;
+    vertical-align: text-bottom;
+    right: 1px;
+    transition: all 0.2s;
+}
+
+.left-link-arrow:hover:before, .left-link-arrow-white:hover:before {
+    right: 8px;
+}
+
+.left-link-arrow:hover, .left-link-arrow-white:hover {
+    color: $accent-color-blue;
+    a {
+        color: $accent-color-blue;
+    }
+}
+
+.left-link-arrow {
+    color: $primary-color-1;
+    a {
+        color: $primary-color-1;
+        text-decoration: none;
+    }
+}
+
+.left-link-arrow-white {
     color: $white-text;
     a {
         color: $white-text;
@@ -251,6 +297,7 @@ button:hover {
     transition: all 0.2s;
     height: 78px;
     width: 100%;
+    box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1000px) {
@@ -265,6 +312,12 @@ button:hover {
     }
 }
 
+@media (max-width: 600px) {
+    .empty-header {
+        box-shadow: none;
+    }
+}
+
 .page-desc {
     .page-desc-content {
         max-width: 900px;
@@ -272,6 +325,9 @@ button:hover {
         margin-left: auto;
         h3 {
             margin-bottom: 12px;
+        }
+        h2 {
+            margin-bottom: 18px;
         }
         p {
             margin-bottom: 0;

@@ -9,7 +9,6 @@
 .title-wrap {
     background-color: $primary-color-6;
     padding: 48px 30px;
-    border-radius: 2px;
 }
 .title {
     max-width: 1250px;
@@ -58,5 +57,122 @@
         h1 {
             font-size: 1.5em;
         }
+    }
+}
+
+.glide__arrow:focus {
+    outline: none; }
+  .glide__arrow:hover {
+    border-color: $white; }
+  .glide__arrow--left {
+    left: 0; }
+  .glide__arrow--right {
+    right: 0; }
+  .glide__arrow--disabled {
+    opacity: 0.33; }
+    .glide--swipeable {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab; }
+      
+      .glide--dragging {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing; }
+
+.carousel-wrapper {
+    margin-top: 24px;
+    max-width: 1000px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    .glide {
+        box-sizing: unset;
+    }
+    .glide__slides {
+        margin: 0;
+    }
+    .glide__slide {
+        img {
+            width: 100%;
+            border-radius: 2px;
+        }
+    }
+    .glide__arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        z-index: 1;
+        padding: 24px 4px;
+        border-radius: 2px;
+        background-color: rgba($primary-color-1, 0.65);
+        box-shadow: none;
+        cursor: pointer;
+        transform: translateY(-50%);
+        transition: background-color 0.2s;
+        line-height: 1; 
+    }
+    .glide__arrow:hover {
+        top: 50%;
+        background-color: $primary-color-1;
+      }
+    .glide__arrows {
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel-wrapper {
+        margin-top: 2.5%;
+        width: 95%;
+        .glide__arrow {
+            padding: 18px 4px;
+        }
+        .glide__arrows {
+            img {
+                width: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .carousel-wrapper {
+        margin-top: 0;
+        width: 100%;
+        .glide__slide {
+            img {
+                border-radius: 0;
+            }
+        }
+        .glide__arrow {
+            padding: 12px 2px;
+        }
+        .glide__arrows {
+            img {
+                width: 21px;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .carousel-wrapper {
+        .glide__arrows {
+            img {
+                width: 19px;
+            }
+        }
+    }
+}
+
+.slide-index {
+    text-align: center;
+    margin-top: 6px;
+    #slide-state {
+        color: $primary-color-1;
     }
 }

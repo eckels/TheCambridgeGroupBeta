@@ -10,7 +10,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-top: 36px;
+            margin-top: 18px;
             .part {
                 margin-right: 36px;
                 p {
@@ -47,8 +47,11 @@
 }
 
 #contact-form {
-    margin-top: 56px;
+    margin-top: 64px;
     max-width: 650px;
+    h2 {
+        margin-bottom: 18px;
+    }
     input {
         display: block;
         outline: none;
