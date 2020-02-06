@@ -95,7 +95,7 @@ button {
   padding: 12px 24px;
   cursor: pointer;
   transition: all 0.2s;
-  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   position: relative;
   top: 0;
@@ -315,6 +315,7 @@ button:hover {
   box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.25);
   min-height: 60px;
   display: flex;
+  top: 0;
   justify-content: center;
   align-items: center;
 }
@@ -618,6 +619,7 @@ button:hover {
   visibility: hidden;
   transition: visibility 0s;
   overflow-y: hidden;
+  top: 0;
 }
 .mobile-search-wrapper .mobile-search-bar {
   position: fixed;
@@ -626,6 +628,7 @@ button:hover {
   width: 100%;
   box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.25);
   min-height: 48px;
+  top: 0;
 }
 .mobile-search-wrapper .mobile-search-bar .mobile-search-padding {
   padding: 8px 18px 8px 18px;
@@ -680,6 +683,10 @@ button:hover {
   position: fixed;
   transition: all 0.2s;
   z-index: 150;
+  top: 0;
+}
+.mobile-nav .mobile-nav-bar {
+  top: 0;
 }
 .mobile-nav .mobile-nav-bar .content-bar {
   position: relative;
@@ -1348,7 +1355,8 @@ button:hover {
 .testimonials .testimonials-content .grid-wrapper .grid .testimony {
   text-align: left;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+  border: solid #E1E4EA 1px;
   max-width: 250px;
   padding: 24px 18px;
   border-radius: 4px;
@@ -1357,6 +1365,7 @@ button:hover {
   position: relative;
 }
 .testimonials .testimonials-content .grid-wrapper .grid .testimony .profile {
+  border: solid #28B1C4 3px;
   max-width: 145px;
   margin-left: auto;
   margin-right: auto;
@@ -1469,6 +1478,8 @@ button:hover {
 .impact-stats .impact-stats-content .holder .big {
   color: #FFFFFF;
   font-size: 6em;
+  margin-top: -12px;
+  margin-bottom: -12px;
 }
 .impact-stats .impact-stats-content .center {
   width: 1%;
@@ -1487,6 +1498,8 @@ button:hover {
   }
   .impact-stats .impact-stats-content .holder .big {
     font-size: 4.5em;
+    margin-top: -8px;
+    margin-bottom: -8px;
   }
 }
 @media (max-width: 650px) {
@@ -1495,6 +1508,8 @@ button:hover {
   }
   .impact-stats .impact-stats-content .holder .big {
     font-size: 3.5em;
+    margin-top: -4px;
+    margin-bottom: -4px;
   }
 }
 @media (max-width: 550px) {
@@ -1517,6 +1532,8 @@ button:hover {
   }
   .impact-stats .impact-stats-content .holder .big {
     font-size: 4.5em;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
   .impact-stats .impact-stats-content .center {
     width: 100%;

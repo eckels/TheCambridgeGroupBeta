@@ -13,7 +13,8 @@
                 .testimony {
                     text-align: left;
                     background-color: $white;
-                    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.25);
+                    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.15);
+                    border: solid $primary-color-5 1px;
                     max-width: 250px;
                     padding: 24px 18px;
                     border-radius: 4px;
@@ -21,6 +22,7 @@
                     margin-right: 30px;
                     position: relative;
                     .profile {
+                        border: solid $accent-color-blue 3px;
                         max-width: 145px;
                         margin-left: auto;
                         margin-right: auto;
